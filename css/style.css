@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: aqua;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    background-color: coral;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.box{
+    background-color: darkgreen;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    grid-column: 1/4;
+}
+
+.box2{
+    grid-column: 4/6;
+}
