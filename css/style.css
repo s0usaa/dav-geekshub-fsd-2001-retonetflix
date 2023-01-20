@@ -1,6 +1,5 @@
 body{
-    margin: 0;
-    background-color: aqua;
+    margin: 0px 20px 0px 10px;
 }
 
 .contenedor{
@@ -8,22 +7,55 @@ body{
     display: grid;
     background-color: coral;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr 4fr;
     gap: 5px;
 }
 
-.box{
-    background-color: darkgreen;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Modificar los links */
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .box1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     grid-column: 1/4;
+    gap: 20px   ;
+}
+
+#logo-netflix{
+    width: 120px;
+    height: 70px;
 }
 
 .box2{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
     grid-column: 4/6;
 }
+
+.derecha{
+    width: 30px;
+    height: 30px;
+}
+
+.box3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 20px;
+    color: white;
+    grid-column: 1/6;
+}
+
+.docu{
+    width: 100%;
+}
+
