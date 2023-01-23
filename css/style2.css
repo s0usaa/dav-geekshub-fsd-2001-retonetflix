@@ -1,4 +1,4 @@
-@media (max-width:360px) {
+@media (max-width:360px){
     .link-menu{
         display: none;
     }
@@ -46,3 +46,4 @@
         color: white;
         grid-column: 1/3;
     }
+}
