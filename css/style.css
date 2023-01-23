@@ -13,7 +13,12 @@ body{
 
 /* Modificar los links */
 
-a{
+.link-menu{
+    text-decoration: none;
+    color: white;
+}
+
+.link-menu1{
     text-decoration: none;
     color: white;
 }
@@ -65,4 +70,8 @@ a{
     border-radius: 5px;
 }
 
-
+@media (min-width: 361px){
+    .link-menu1{
+        display: none;
+    }
+}
