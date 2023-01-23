@@ -1,15 +1,16 @@
 body{
-    margin: 0px 20px 0px 10px;
     background-color: black;
+    font-family: sans-serif;
 }
 
 .contenedor{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr 2fr 3fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
 }
+
 
 /* Modificar los links */
 
@@ -25,34 +26,40 @@ body{
 
 /* Headers con 2 Col */
 
+.header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
 .box1{
+    width: 80vw;
     background-color: black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    grid-column: 1/4;
-    gap: 20px   ;
+    gap: 10px;
+    padding-left: 10px;
 }
 
 #logo-netflix{
-    width: 120px;
-    height: 70px;
+    width: 140px;
 }
 
 .box2{
+    width: 20vw;
     background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
-    grid-column: 4/6;
+    gap: 20px;
+    padding-right: 10px;
 }
 
 .derecha{
     width: 30px;
-    height: 30px;
     cursor: pointer;
 }
+
 
 /* Parte central de la pagina */
 
@@ -60,7 +67,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-size: 30px;
+    font-size: xx-large;
     color: white;
     grid-column: 1/6;
 }
@@ -71,7 +78,10 @@ body{
 }
 
 @media (min-width: 361px){
-    .link-menu1{
+    .menu1{
+        display: none;
+    }
+    .movil{
         display: none;
     }
 }

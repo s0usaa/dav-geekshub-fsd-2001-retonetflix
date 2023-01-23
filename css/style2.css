@@ -2,4 +2,47 @@
     .link-menu{
         display: none;
     }
-}
+    .iconos{
+        display: none;
+    }
+    .header{
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        position: fixed;
+    }
+    .box1{
+        width: 50vw;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+        gap: 5px;
+    }
+    .box2{
+        width: 50vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #logo-netflix{
+        margin: 0;
+        width: 40%;
+    }
+    .derecha{
+        width: 7vw;
+    }
+    .contenedor{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        padding-top: 10vh;
+    }
+    .box3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: medium;
+        color: white;
+        grid-column: 1/3;
+    }
